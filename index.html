@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="bp logo.png">
     </head>
     <body>
         <div id="First" class="first-sec">
@@ -19,12 +20,20 @@
                 <ul>
                     <li>Botbot is a repository about a python bot developed for a course work, here is the <a href="https://github.com/aleiscoding/BotBot" target="_blank">botbot repo</a>.</li>
                     <li>AGP Campus Virtual is a repository about a website containing courses to raise awareness about certain types of cancer which was developed for a social project, here is the <a href="https://github.com/aleiscoding/AGP-Campus-Virtual" target="_blank">agp campus repo</a>.</li>
-                    <li>Dynamitech: Coronanalyst is a repository about a website containing data forms to learn about users' lifestyle before and after of COVID-19, here is the <a href="https://github.com/aleiscoding/dynamitech-coronanalyst" target="_blank">coronanalyst repo</a>.</li>
+                    <li>Dynamitech-Coronanalyst is a repository about a website containing data forms to learn about users' lifestyle before and after of COVID-19, here is the <a href="https://github.com/aleiscoding/dynamitech-coronanalyst" target="_blank">coronanalyst repo</a>.</li>
                 </ul>
             </div>
-            <div>
-                <button class="BUTTON">Execute a JS Command!</button>
+            <div class="second-row">
+                <p>Press the button!</p>
+            </div>
+            <div class="first-row center">
+                <button class="BUTTON" id="botonsito" onclick="buttonPressed()">Execute a JS Command!</button>
             </div>
         </div>
     </body>
+    <script>
+        function buttonPressed() {
+            document.getElementById("botonsito").innerHTML = "The text inside the button changed!";
+        }
+    </script>
 </html>

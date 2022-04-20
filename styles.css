@@ -38,9 +38,43 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #187CE4;
-    transition: background-color .5s;
 }
 
 a:hover {
-    font-style: bold;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+}
+
+.first-row {
+    position: relative;
+    margin-top: 25px;
+}
+
+.BUTTON {
+    color: #187CE4;
+    border-color: #187CE4;
+    border-radius: 5px;
+    box-shadow: none;
+    align-items: center;
+    padding: 10px;
+    background: transparent;
+}
+
+.BUTTON:hover {
+    cursor: pointer;
+    border-color: #187CE4;
+    background-color: #187CE4;
+    color: white;
+}
+
+.second-row {
+    margin-top: 25px;
+}
+
+/* Other stuff */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
